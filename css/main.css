@@ -411,6 +411,10 @@ div.table-legend {
   background: #fc9e5e;
 }
 
+.orange-two {
+  background: #f0d18f;
+}
+
 .orange-text {
   color: #fc9e5e;;
 }
@@ -580,47 +584,116 @@ h2.chinese {
 
 div.event-date {
   width: 95%;
-  margin: 0 0 5% 0;
+  margin: 0 0 30px 0;
   padding: 2.5%;
   float: left;
 }
 
-div.event-date h1 {
+div.event-block {
+      width: 95%;
+      margin: 0 0 5% 0;
+      padding: 2.5%;
+}
+
+div.event-opening {
+      padding-bottom: 5px;
+      margin-bottom: 30px;
+}
+
+div.front-people {
+  width: 100%;
+  min-height: 90px;
+  margin: 30px 0 0 0;
+  display: table;
+}
+
+div.front-people p{
+  font-size: 12px;
+  line-height: 1.3em;
+  padding: 0;
+  margin: 0;
+  display: table-cell; 
+  vertical-align: middle; 
+  width: 90%;
+}
+
+div.front-portrait {
+    width: 30%;
+    height: 70px;
+    border-radius: 100px;
+    overflow: hidden;
+    padding-right: 20px;
+    margin-top: 10px;
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: right;
+}
+
+div.front-portrait img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+}
+
+div.event-date h1, div.event-block h1 {
   font-size: 42px;
   margin: 0;
   letter-spacing: -2px;
   text-align: center;
 }
 
-div.event-date h2 {
+div.event-date h2, div.event-block h2 {
   font-size: 28px;
   margin: 0;
   text-align: center;
 }
 
-div.event-date h3 {
+div.event-date h3, div.event-block h3 {
   font-size: 16px;
   margin: 0;
   text-align: center;
 }
 
 a.event-detail-link {
-  margin: 10px auto;
+  margin: 20px auto 10px;
   display: block;
-  padding: 5px 10px;
+  padding: 11px 5%;
   background: #000;
   color: #fff;
   text-decoration: none;
   font-family: 'vinyl', sans-serif;
-  width: 50%;
+  width: 37.5%;
   text-align: center;
-  border: 3px #000 solid;
+  border: none;
 }
 
-a.event-detail-link:hover {
-  background: #ff9933;
-  border: 3px #fff solid;
+a.event-detail-link-reg {
+  margin: 20px 0 10px 0;
+  display: block;
+  padding: 11px 5%;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'vinyl', sans-serif;
+  width: 37.5%;
+  text-align: center;
+  border: none;
+  float:left;
 }
+
+a.event-detail-link-left {
+  margin-right: 5%;
+}
+
+a.reg-call {
+  background: #d84c00;
+}
+
+a.reg-call:hover, a.event-detail-link:hover, a.event-detail-link-reg:hover  {
+  background: #f85903;
+}
+
+
 
 /* OPENING */
 
@@ -677,6 +750,22 @@ span.run-people {
 }
 
 
+    .big-reg-btn {
+      background: #d84c00;
+      display: block;
+      padding: 20px 30px;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      width: 280px;
+      font-size: 24px;
+      line-height: 1.3em;
+      margin: 50px auto 80px;
+    }
+
+    .big-reg-btn:hover {
+      background: #f85903;
+    }
 
 
 
@@ -691,11 +780,13 @@ span.run-people {
 @media only screen and (min-width: 480px) {
 
 
-
 }
 
 @media only screen and (min-width: 768px) {
 
+    .big-reg-btn {
+      margin: 20px 0 60px;
+    }
 
     h1,h2 {
       text-align: left;
@@ -709,10 +800,7 @@ span.run-people {
       top:-2000px;
     }
 
-    .tablewrap {
-       overflow: hidden;
-      width: 100%;
-    }
+
 
     .logo-list li{
       list-style: none;
@@ -721,6 +809,8 @@ span.run-people {
       text-align: center;
       width: 33.33%;
     }
+
+
 
 
 
@@ -747,10 +837,29 @@ span.run-people {
         text-align: left;
     }
 
+    div.event-opening {
+      margin-bottom: 30px;
+      padding-bottom: 0;
+    }
 
     div.event-date {
-      width: 40%;
-      margin: 0 2.5% 5% 0;
+      width: 42.5%;
+      margin: 0 0 5% 0;
+      padding: 2.5%;
+      float: left;
+    }
+
+    div.event-date-left {
+      margin: 0 5% 5% 0;
+    }
+
+    div.front-portrait {
+    width: 70px;
+    }
+
+    div.event-block {
+      width: 42.5%;
+      margin: 0 2.5% 0 0;
       padding: 2.5%;
       float: left;
     }
@@ -831,23 +940,23 @@ span.run-people {
       display: block;
       width: 100%;
       position: fixed;
-      height: 138px;
+      height: 101px;
       bottom: 0;
       left: 0;
-      z-index:99;
+      z-index:999;
     }
 
 
     #startlab-logo {
       display: block;
       float:right;
-      width: 300px;
-      height:138px;
+      width: 220px;
+      height:101px;
     }
 
     #startlab-logo img {
-      width: 300px;
-      height:138px;
+      width: 220px;
+      height:101px;
     }
 
     div.main {
@@ -860,41 +969,42 @@ span.run-people {
 
     .header-container {
       display:block;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width:100%;
-      z-index: 0;
-      padding-bottom: 140px;
+      z-index: 998;
+      padding-top: 50px;
+      height: 0;
     }
 
 
     /* NAV */
 
     nav a {
-        margin-bottom: 10px;
-        padding: 15px 10px;
-
+        padding: 3px 10px;
+        font-size: 13px;
+        line-height: 1.3em;
         text-align: right;
         text-decoration: none;
         font-weight: bold;
         z-index: 99;
         background: #fff;
         border: 3px solid #fff;
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     nav a:hover, nav a.active:hover {
       border: 3px solid #ff9933;
       text-decoration: none;
-      padding: 15px 10px;
+      padding: 3px 10px;
     }
 
     nav a.active {
       border: none;
       border-right:  3px solid #ff9933;
       color: #000;
-      padding: 18px 10px;
+      padding: 6px 10px;
     }
 
 
@@ -993,6 +1103,13 @@ span.run-people {
 }
 
 @media only screen and (min-width: 1140px) {
+
+    .tablewrap {
+      overflow: hidden;
+      width: 74.30939226%;
+    }
+
+
 
 /* ===============
     Maximal Width

@@ -1,7 +1,7 @@
 $(window).scroll(function(){
 //box one
     var $win = $(window);
-    $('#side-nav').css('top', $win.scrollTop());
+   // $('#side-nav').css('top', $win.scrollTop());
 });
 
 $(document).ready(function() {
