@@ -70,26 +70,145 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    Style
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
 }
 
 .title {
-    color: white;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE6/7.
+ * Addresses font sizes within `section` and `article` in FF4+, Chrome, S5.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0 0 0.67em;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/*
+ * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+/*
+ * Addresses styling not present in S5, Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/*
+ * Addresses styling not present in IE6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+p,
+pre {
+  margin: 1em 0;
+  font-family: "nimbus-sans",sans-serif;
+}
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome.
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/*
+ * Addresses CSS quotes not supported in IE6/7.
+ */
+q {
+  quotes: none;
+}
+/*
+ * Addresses `quotes` property not supported in S4.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ * gist.github.com/413930
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
 }
 
 /* ==============
@@ -103,20 +222,12 @@ nav ul {
 
 nav a {
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
+    color: #000;
+    background: none;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
+nav a:hover {
+    color: #000;
 }
 
 nav a:hover {
@@ -128,7 +239,7 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 0;
 }
 
 .main article h1 {
@@ -141,7 +252,6 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
     padding: 20px 0;
 }
 
@@ -153,15 +263,418 @@ nav a:hover {
     padding-top: 20px;
 }
 
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-family: "vinyl", sans-serif;
+  text-rendering: optimizelegibility;
+  font-weight: 200;
+
+}
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a {
+  text-decoration: none;
+}
+h1,
+.h1 {
+  font-size: 4em;
+  line-height: 1.333em;
+}
+h2,
+.h2 {
+  font-size: 1.75em;
+  line-height: 1.4em;
+  margin-bottom: 0.375em;
+}
+h3,
+.h3 {
+  font-size: 1.125em;
+}
+h4,
+.h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+h5,
+.h5 {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 
+/* TABLE STYLE */
+
+.tablewrap {
+  overflow: scroll;
+  width: 100%;
+  padding-right: 1px;
+}
+
+.table-title {
+  float: none;
+  text-align: center;
+}
+
+table {
+  margin-top: 10px;
+}
+
+td {
+  border: 2px #000 solid;
+  padding: 15px 6px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.2em;
+  width: 14.2%;
+}
+
+td.time {
+  border: none;
+  font-weight: bold;
+  width: 10%;
+}
+
+div.table-legend {
+  padding-top: 25px;
+}
+
+#table-legend-list {
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
+}
+
+#table-legend-list li{
+  list-style: none;
+  float: left;
+  padding: 10px 0 0 10px;
+  font-size: 11px;
+  line-height: 1.4em;
+}
+
+.legend-square {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #000;
+  float: left;
+  margin:8px 5px 0 0;
+}
+
+.c-tag {
+  padding: 2px 5px;
+  font-size: 11px;
+  color:#fff;
+  background: #069a95;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 6px;
+}
+
+.e-tag {
+  padding: 2px 5px;
+  font-size: 11px;
+  color:#fff;
+  background: #c16565;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 6px;
+}
+
+/* UTILITES */
+
+
+.orange {
+  background: #fc9e5e;
+}
+
+.orange-text {
+  color: #fc9e5e;;
+}
+
+.yellow {
+  background: #fff609;
+}
+
+.light-yellow {
+  background: #ffffd8;
+}
+
+.light-blue {
+  background: #276fe7;
+  color:#fff;
+}
+
+.white {
+  background: #fff;
+}
+
+.section-break {
+  margin-top: 50px;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+
+ul.logo-list {
+  margin:0;
+  padding: 0;
+}
+
+.logo-list li{
+  list-style: none;
+  float: left;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.3em;
+}
+
+.logo-list img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* LAYOUT - MOBILE */
+
+h1,h2,h3 {
+  text-align: center;
+}
+
+.eightcol {
+  margin-bottom: 50px;
+}
+
+ .no-b-margin {
+    margin-bottom: 0;
+  }
+
+
+.main {
+  margin-top: 100px;
+}
+
+#mobile-header {
+  position: fixed;
+  top:0;
+  left: 0;
+  background: #000;
+  height: 50px;
+  width: 100%;
+  z-index: 99;
+}
+
+#menu-btn {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  width: 50px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#mobile-menu {
+  background: #333;
+  color: #fff;
+  top:50px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 98;
+  display: none;
+}
+
+#mobile-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-menu li {
+  border-bottom: 1px #fff solid;
+  list-style: none;
+}
+
+#mobile-menu a {
+  color: #fff;
+  padding: 20px 10px;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 
 
+#mobile-menu a:hover, #mobile-menu a:active {
+  background: #000;
+  text-decoration: none;
+} 
 
+/* LOGO */
+
+div.logo-container {
+  display: none;
+}
+
+/* HEADER */
+
+.header-container {
+  display: none;
+}
+
+
+/* Home */
+
+h1.big-title {
+    font-size: 62px;
+    line-height: 1em;
+    margin:0;
+    text-align: center;
+}
+
+h1.big-title span.subline {
+    font-size: 32px;
+    line-height: 1em;
+    padding-top: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+h2.chinese {
+    font-size: 18px;
+    margin: 0.4em 0 1.1em 0;
+    text-align: center;
+}
+
+div.event-date {
+  width: 95%;
+  margin: 0 0 5% 0;
+  padding: 2.5%;
+  float: left;
+}
+
+div.event-date h1 {
+  font-size: 42px;
+  margin: 0;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+div.event-date h2 {
+  font-size: 28px;
+  margin: 0;
+  text-align: center;
+}
+
+div.event-date h3 {
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+a.event-detail-link {
+  margin: 10px auto;
+  display: block;
+  padding: 5px 10px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'vinyl', sans-serif;
+  width: 50%;
+  text-align: center;
+  border: 3px #000 solid;
+}
+
+a.event-detail-link:hover {
+  background: #ff9933;
+  border: 3px #fff solid;
+}
+
+/* OPENING */
+
+p.people {
+  font-size: 18px;
+  line-height: 1.3em;
+  padding-top:40px;
+}
+
+p.people span.people-title {
+  font-size: 13px;
+  line-height: 1.3em;
+  display: block;
+  margin-top: 5px;
+}
+
+p.run {
+  font-size: 24px;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+p.run-indent {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+div.indent {
+  padding-left: 30px;
+}
+
+p.indent-time {
+  margin-bottom: 0;
+}
+
+p.indent-first {
+  padding-top:0;
+  margin-top: 0;
+}
+
+
+span.run-time {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+span.run-people {
+  font-size: 16px;
+  line-height: 1.2em;
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  font-weight: normal;
+}
 
 
 
@@ -177,55 +690,213 @@ nav a:hover {
 
 @media only screen and (min-width: 480px) {
 
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
 
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
 
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+    h1,h2 {
+      text-align: left;
     }
 
-/* ============
-    WIDE: Menu
-   ============ */
+    #mobile-header, #mobile-menu {
+      display: none;
+    }
+
+    #mobile-menu {
+      top:-2000px;
+    }
+
+    .tablewrap {
+       overflow: hidden;
+      width: 100%;
+    }
+
+    .logo-list li{
+      list-style: none;
+      float: left;
+      padding: 20px 0;
+      text-align: center;
+      width: 33.33%;
+    }
+
+
+
+    /* Home */
+
+    h1.big-title {
+        font-size: 120px;
+        line-height: 1em;
+        margin:0;
+        text-align: left;
+    }
+
+    h1.big-title span.subline {
+        font-size: 48px;
+        line-height: 1.1em;
+        padding-top: 0;
+        display: inline-block;
+        text-align: left;
+    }
+
+    h2.chinese {
+        font-size: 26px;
+        margin: 0.4em 0 1.1em 0;
+        text-align: left;
+    }
+
+
+    div.event-date {
+      width: 40%;
+      margin: 0 2.5% 5% 0;
+      padding: 2.5%;
+      float: left;
+    }
+
+    /* ABOUT */
+
+    h1.inner-title {
+    font-size: 120px;
+    line-height: 0.5em;
+    margin:35px 0 100px;
+    text-align: left;
+    }
+
+    h1.inner-title span.subline {
+        font-size: 32px;
+        line-height: 1em;
+        padding-top: 0;
+        display: inline-block;
+        text-align: left;
+        border-bottom: 3px #000 solid;
+    }
+
+    /* BOOTCAMP */
+
+    h1.bootcamp-title {
+      margin-bottom: 0;
+    }
+
+    .table-title {
+      float: left;
+      text-align: left;
+      padding-top: 10px;
+    }
+
+    div.table-legend {
+      float:right;
+      margin: 0;
+    }
+
+    #table-legend-list {
+      width: auto;
+    }
+
+
+    /* OPENING */
+
+    h1.opening-title {
+      line-height: 1em;
+      margin: 5px 0 20px;
+    }
+
+    p.people {
+    padding-top:0;
+    }
+
+
+    /* sponsers */
+
+    h1.sponser-title {
+      line-height: 1em;
+      margin: 5px 0 20px;
+    }
+
+    h3.subline {
+        font-size: 32px;
+        line-height: 1em;
+        padding-top: 0;
+        display: inline-block;
+        text-align: left;
+        border-bottom: 3px #000 solid;
+        margin-top: 0;
+    }
+
+
+    /* LOGO */
+
+    div.logo-container {
+      display: block;
+      width: 100%;
+      position: fixed;
+      height: 138px;
+      bottom: 0;
+      left: 0;
+      z-index:99;
+    }
+
+
+    #startlab-logo {
+      display: block;
+      float:right;
+      width: 300px;
+      height:138px;
+    }
+
+    #startlab-logo img {
+      width: 300px;
+      height:138px;
+    }
+
+    div.main {
+      position: relative;
+      margin-top: 60px;
+    }
+
+
+    /* Header */
+
+    .header-container {
+      display:block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      z-index: 0;
+      padding-bottom: 140px;
+    }
+
+
+    /* NAV */
+
+    nav a {
+        margin-bottom: 10px;
+        padding: 15px 10px;
+
+        text-align: right;
+        text-decoration: none;
+        font-weight: bold;
+        z-index: 99;
+        background: #fff;
+        border: 3px solid #fff;
+        margin-bottom: 20px;
+    }
+
+    nav a:hover, nav a.active:hover {
+      border: 3px solid #ff9933;
+      text-decoration: none;
+      padding: 15px 10px;
+    }
+
+    nav a.active {
+      border: none;
+      border-right:  3px solid #ff9933;
+      color: #000;
+      padding: 18px 10px;
+    }
+
 
     .title {
         float: left;
@@ -233,12 +904,82 @@ nav a:hover {
 
     nav {
         float: right;
-        width: 38%;
+        width: 160px;
     }
 
-/* ============
-    WIDE: Main
-   ============ */
+
+
+  .onecol {
+    width: 5.801104972%;
+  }
+  /* 4.85%;  } /* grid_1  */
+  .twocol {
+    width: 14.364640883%;
+  }
+  /* 13.45%; } /* grid_2  */
+  .threecol {
+    width: 22.928176794%;
+  }
+  /* 22.05%; } /* grid_3  */
+  .fourcol {
+    width: 31.491712705%;
+  }
+  /* 30.75%; } /* grid_4  */
+  .fivecol {
+    width: 40.055248616%;
+  }
+  /* 39.45%; } /* grid_5  */
+  .sixcol {
+    width: 48.618784527%;
+  }
+  /* 48%;    } /* grid_6  */
+  .sevencol {
+    width: 57.182320438000005%;
+  }
+  /* 56.75%; } /* grid_7  */
+  .eightcol {
+    width: 65.74585634900001%;
+  }
+  /* 65.4%;  } /* grid_8  */
+  .ninecol {
+    width: 74.30939226%;
+  }
+  /* 74.05%; } /* grid_9  */
+  .tencol {
+    width: 82.87292817100001%;
+  }
+  /* 82.7%;  } /* grid_10 */
+  .elevencol {
+    width: 91.436464082%;
+  }
+  /* 91.35%; } /* grid_11 */
+  .twelvecol {
+    width: 99.999999993%;
+  }
+  /* 100%;   } /* grid_12 */
+  .onecol,
+  .twocol,
+  .threecol,
+  .fourcol,
+  .fivecol,
+  .sixcol,
+  .sevencol,
+  .eightcol,
+  .ninecol,
+  .tencol,
+  .elevencol,
+  .twelvecol {
+    position: relative;
+    float: left;
+    margin-left: 2.762430939%;
+  }
+  .first {
+    margin-left: 0;
+  }
+  .last {
+    float: right;
+  }
+ 
 
     .main article {
         float: left;
@@ -309,6 +1050,10 @@ nav a:hover {
 
 .invisible {
     visibility: hidden;
+}
+
+.clear {
+  clear: both;
 }
 
 .clearfix:before,
