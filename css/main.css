@@ -477,6 +477,7 @@ ul.logo-list {
 .logo-list img {
   display: block;
   margin: 0 auto;
+  width: 200px;
 }
 
 /* LAYOUT - MOBILE */
@@ -554,7 +555,7 @@ h1,h2,h3 {
 #mobile-menu a:hover, #mobile-menu a:active {
   background: #000;
   text-decoration: none;
-} 
+}
 
 /* LOGO */
 
@@ -622,8 +623,8 @@ div.front-people p{
   line-height: 1.3em;
   padding: 0;
   margin: 0;
-  display: table-cell; 
-  vertical-align: middle; 
+  display: table-cell;
+  vertical-align: middle;
   width: 90%;
 }
 
@@ -634,8 +635,8 @@ div.front-portrait {
     overflow: hidden;
     padding-right: 20px;
     margin-top: 10px;
-    display: table-cell; 
-    vertical-align: middle; 
+    display: table-cell;
+    vertical-align: middle;
     text-align: right;
 }
 
@@ -1012,21 +1013,20 @@ span.run-people {
         font-weight: bold;
         z-index: 99;
         background: #fff;
-        border: 3px solid #fff;
-        margin-bottom: 0;
+        border-right:  3px solid #ffffff;
+        margin-bottom: 10px;
     }
 
     nav a:hover, nav a.active:hover {
-      border: 3px solid #ff9933;
+      border-right:  3px solid #ff9933;
       text-decoration: none;
       padding: 3px 10px;
     }
 
     nav a.active {
-      border: none;
       border-right:  3px solid #ff9933;
       color: #000;
-      padding: 6px 10px;
+      padding: 3px 10px;
     }
 
 
@@ -1111,7 +1111,7 @@ span.run-people {
   .last {
     float: right;
   }
- 
+
 
     .main article {
         float: left;
