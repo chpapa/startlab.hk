@@ -477,6 +477,7 @@ ul.logo-list {
 .logo-list img {
   display: block;
   margin: 0 auto;
+  width: 200px;
 }
 
 /* LAYOUT - MOBILE */
