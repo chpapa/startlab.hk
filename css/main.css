@@ -358,6 +358,13 @@ td.time {
   width: 10%;
 }
 
+td strong {
+  font-size: 16px;
+  font-family: 'vinyl', sans-serif;
+  margin: 10px 0;
+  display: inline-block;
+}
+
 div.table-legend {
   padding-top: 25px;
 }
