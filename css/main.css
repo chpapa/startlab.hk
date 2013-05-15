@@ -406,6 +406,9 @@ div.table-legend {
 
 /* UTILITES */
 
+.grey {
+  background: #ddd;
+}
 
 .orange {
   background: #fc9e5e;
