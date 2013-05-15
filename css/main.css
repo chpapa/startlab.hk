@@ -412,7 +412,7 @@ div.table-legend {
 }
 
 .orange-two {
-  background: #f0d18f;
+  background: #ffeecb;
 }
 
 .orange-text {
@@ -697,6 +697,14 @@ a.reg-call:hover, a.event-detail-link:hover, a.event-detail-link-reg:hover  {
 
 /* OPENING */
 
+p.opening-speaker img {
+  width: 170px;
+  height: 170px;
+  border-radius: 200px;
+  margin: 100px auto 0;
+  display: block;
+}
+
 p.people {
   font-size: 18px;
   line-height: 1.3em;
@@ -913,6 +921,10 @@ span.run-people {
 
     p.people {
     padding-top:0;
+    }
+
+    p.opening-speaker img {
+    margin: 20px auto 0;
     }
 
 
