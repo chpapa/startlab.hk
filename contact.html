@@ -12,6 +12,10 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="114×114" href="apple-touch-icon-114×114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72×72" href="apple-touch-icon-72×72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script type="text/javascript" src="//use.typekit.net/ffn3men.js"></script>
@@ -22,6 +26,13 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=284574131554273";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
         <div class="logo-container">
             <div class="wrapper clearfix">
@@ -59,6 +70,21 @@
                             <li><a href="demoday.html">展示日<br>DEMO DAY</a></li>
                             <li><a href="sponsers_partners.html">贊助商及夥伴機構<br>SPONSERS &amp; PARTNERS</a></li>
                             <li><a href="contact.html" class="active">聯絡<br>CONTACT</a></li>
+
+
+                            <li class="social-btn-li">
+                                 <div class="social-btn">
+                                    <div class="fb-like" data-href="http://startlab.hk" data-send="false" data-layout="button_count" data-width="75" data-show-faces="true" data-font="verdana"></div>
+                                 </div>
+                            </li>
+
+                            <li class="social-btn-li">
+                                 <div class="social-btn">
+                                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://startlab.hk" data-text="StartLab Hong Kong: The First Startup Bootcamp for Tertiary Students &amp; Graduates in Hong Kong!" data-hashtags="startlabhk">Tweet</a>
+                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                 </div>
+                            </li>
+                            
                         </ul>
                     </nav>
             </div>

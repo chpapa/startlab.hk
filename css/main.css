@@ -467,7 +467,7 @@ ul.logo-list {
 .logo-list li{
   list-style: none;
   float: left;
-  padding: 20px 0;
+  padding: 30px 10px;
   text-align: center;
   width: 100%;
   font-size: 12px;
@@ -786,15 +786,20 @@ span.run-people {
       background: #f85903;
     }
 
+/* SPONSERS */
+
+h2.sponser-head {
+  margin: 80px 0 20px 0;
+}
 
 
-
-/* OPENING */
+/* CONTACT */
 
 .contact-icon{
   width: 200px;
   margin: 30px;
 }
+
 
 
 
@@ -830,9 +835,10 @@ span.run-people {
     .logo-list li{
       list-style: none;
       float: left;
-      padding: 20px 0;
+      padding: 20px 9.3333% 0 0;
       text-align: center;
-      width: 33.33%;
+      width: 24%;
+      height: 220px;
     }
 
 
@@ -969,23 +975,23 @@ span.run-people {
       display: block;
       width: 100%;
       position: fixed;
-      height: 101px;
+      height: 87px;
       bottom: 0;
       left: 0;
-      z-index:999;
+      z-index:99;
     }
 
 
     #startlab-logo {
       display: block;
       float:right;
-      width: 220px;
-      height:101px;
+      width: 190px;
+      height:87px;
     }
 
     #startlab-logo img {
-      width: 220px;
-      height:101px;
+      width: 190px;
+      height:87px;
     }
 
     div.main {
@@ -1044,6 +1050,19 @@ span.run-people {
         float: right;
         width: 160px;
     }
+
+     .social-btn-li {
+      height: 30px;
+      width: 90px;
+      overflow: hidden;
+      float: right;
+    }
+
+    .social-btn {
+      width: 75px;
+      padding: 10px 0 0 0;
+    }
+
 
 
 
