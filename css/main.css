@@ -467,17 +467,17 @@ ul.logo-list {
 .logo-list li{
   list-style: none;
   float: left;
-  padding: 30px 10px;
+  margin: 10px 30px;
   text-align: center;
   width: 100%;
-  font-size: 12px;
-  line-height: 1.3em;
+  font-size: 14px;
+  line-height: 1.5em;
 }
 
 .logo-list img {
   display: block;
   margin: 0 auto;
-  width: 200px;
+  width: 160px;
 }
 
 /* LAYOUT - MOBILE */
@@ -789,7 +789,7 @@ span.run-people {
 /* SPONSERS */
 
 h2.sponser-head {
-  margin: 80px 0 20px 0;
+  margin: 20px 0 10px 0;
 }
 
 
@@ -835,7 +835,7 @@ h2.sponser-head {
     .logo-list li{
       list-style: none;
       float: left;
-      padding: 20px 9.3333% 0 0;
+      margin: 10px 30px;
       text-align: center;
       width: 24%;
       height: 220px;
