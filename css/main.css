@@ -769,23 +769,28 @@ span.run-people {
   font-weight: normal;
 }
 
+.bootcamp-schedule td {
+  text-align: left;
+  vertical-align: top;
+  border: none;
+}
 
-    .big-reg-btn {
-      background: #d84c00;
-      display: block;
-      padding: 20px 30px;
-      text-decoration: none;
-      color: #fff;
-      text-align: center;
-      width: 280px;
-      font-size: 24px;
-      line-height: 1.3em;
-      margin: 50px auto 80px;
-    }
+.big-reg-btn {
+  background: #d84c00;
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  width: 280px;
+  font-size: 24px;
+  line-height: 1.3em;
+  margin: 50px auto 80px;
+}
 
-    .big-reg-btn:hover {
-      background: #f85903;
-    }
+.big-reg-btn:hover {
+  background: #f85903;
+}
 
 /* SPONSERS */
 
@@ -951,6 +956,11 @@ h2.sponser-head {
     margin: 20px auto 0;
     }
 
+    .boot-schedule td {
+      text-align: left;
+      vertical-align: top;
+      border: none;
+    }
 
     /* sponsers */
 
